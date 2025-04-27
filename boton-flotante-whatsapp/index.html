@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatsapp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="whatsapp-main">
+      <div class="whatsapp-wrapper">
+        <div class="close_whatsapp"></div>
+        <div class="whatsapp-header">
+          <div class="support-avatar">
+            <div class="avatar-wrapper"></div>
+          </div>
+          <div class="header-info">
+            <div class="whatsapp-name">Atención al Cliente</div>
+            <div class="whatsapp-reply-time">Normalmente responde en minutos</div>
+            <div class="online-status">En línea</div>
+          </div>
+        </div>
+        <div class="whatsapp-background">
+          <div class="whatsapp-message-container">
+            <div class="loading-animation typing-indicator">
+              <span class="typing-text">está escribiendo...</span>
+              <div class="dot-pulse"></div>
+            </div>
+            <div class="whatsapp-message-wrapper">
+              <div class="chat-body-wrapper">
+                <div class="whatsapp-chat-message">
+                  <p>¡Hola! 👋</p>
+                  <p>Estamos aquí para ayudarte. Cuéntanos en qué podemos asistirte hoy.</p>
+                </div>
+                <div class="whatsapp-chat-time">14:30</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="whatsapp-footer">
+          <a href="https://web.whatsapp.com/send?phone=3151151000&text=%C2%A1Hola!%20estoy%20interesad%40%20en" title="WhatsApp" class="whatsapp-btn pulse-btn" target="_blank" rel="noopener noreferrer">
+            <svg class="whatsapp-send-icon-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+              <path d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z" fill="#FFF"/>
+            </svg>
+            <span class="chat-button-text">Chatear Ahora</span>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Botón flotante -->
+      <div class="whatsapp-popup-button-left" id="whatsapp-popup">
+        <div class="whatsapp-notify bubble-notification">1</div>
+        <div class="whatsapp-button-main">
+          <div class="ripple-circle"></div>
+          <svg class="whatsapp-send-icon-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+            <path d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z" fill="#FFF"/>
+          </svg>
+        </div>
+      </div>
+  
+      <!-- Audio para la notificación -->
+      <audio id="notification-sound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-software-interface-start-2574.mp3" type="audio/mpeg">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-software-interface-start-2574.wav" type="audio/wav">
+      </audio>
+    </div>
+  
+
+      <script src="app.js"></script>
+</body>
+</html>
